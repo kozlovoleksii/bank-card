@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./BankCard.css";
+import mcLogo from "/mc.png";
 
 export const BankCard = () => {
   const [isFlipped, setIsFlipped] = useState(false);
@@ -28,7 +29,7 @@ export const BankCard = () => {
           <div className="card__shine"></div>
           <header className="card__top">
             <div className="card__brand">$10 000.00</div>
-            <img src="/mc.png" alt="MasterCard logo" className="card__logo" />
+            <img src={mcLogo} alt="MasterCard logo" className="card__logo" />
           </header>
           <div className="card__number">**** **** **** 1234</div>
           <section className="card__meta">
